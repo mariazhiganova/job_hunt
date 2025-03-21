@@ -12,6 +12,10 @@ class BaseParser(ABC):
     def get_vacancies(self, keyword):
         pass
 
+    @abstractmethod
+    def __connection(self):
+        pass
+
 
 class HH(BaseParser):
     """
